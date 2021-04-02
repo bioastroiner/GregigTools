@@ -1,5 +1,6 @@
 package com.bioast.gttools.datagen;
 
+import com.bioast.gttools.core.Ref;
 import com.bioast.gttools.datagen.providers.client.ModBlockStateProvider;
 import com.bioast.gttools.datagen.providers.client.ModItemModelProvider;
 import com.bioast.gttools.datagen.providers.server.loottables.ModLootTableProvider;
@@ -12,34 +13,33 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 
-import static com.bioast.gttools.core.ModName.MOD_ID;
 
-
-@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Ref.ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class DataGenerators {
-    private DataGenerators() {}
+    private DataGenerators() {
+    }
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
-		
+
         DataGenerator gen = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-		
-		if (event.includeServer()) {
-			// Loot & Recipe
+
+        if (event.includeServer()) {
+            // Loot & Recipe
             gen.addProvider(new ModLootTableProvider(gen));
             gen.addProvider(new ModRecipeProvider(gen));
-			// Tags
-			ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
-			ModItemTagsProvider blockItemTags = new ModItemTagsProvider(gen, blockTags, existingFileHelper);
-			gen.addProvider(blockTags);
-			gen.addProvider(blockItemTags);
+            // Tags
+            ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
+            ModItemTagsProvider blockItemTags = new ModItemTagsProvider(gen, blockTags, existingFileHelper);
+            gen.addProvider(blockTags);
+            gen.addProvider(blockItemTags);
         }
         if (event.includeClient()) {
-			// BlockState
+            // BlockState
             gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
-			// ItemModel
-			gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+            // ItemModel
+            gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
         }
     }
 }

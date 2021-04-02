@@ -6,10 +6,10 @@ import org.apache.logging.log4j.Logger;
 
 public final class Ref {
     public static String id() {
-        return Main.MOD_ID;
+        return ID;
     }
 
-    public static final String ID = id();
+    public static final String ID = Main.MOD_ID;
 
     public static String ver() {
         return "0.0";
