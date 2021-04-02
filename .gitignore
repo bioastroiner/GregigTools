@@ -26,4 +26,4 @@ forge*changelog.txt
 
 # Misc
 /.OLD/
-src/generated*
+#src/generated*

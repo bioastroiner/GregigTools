@@ -5,19 +5,20 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.AxeItem;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUseContext;
+import net.minecraft.item.*;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 
 public class LumberAxe extends AxeItem {
-    public LumberAxe(IItemTier tier, float speed, float p_i48530_3_, Properties properties) {
+    public String tierName;
+
+    public LumberAxe(IItemTier tier, float speed, float p_i48530_3_, Properties properties, String tierName) {
         super(tier, speed, p_i48530_3_, properties);
+        this.tierName = tierName;
     }
 
     @Override
@@ -33,10 +34,9 @@ public class LumberAxe extends AxeItem {
                 if (pos2break.getY() > world.getMaxBuildHeight())
                     break;
                 BlockState state2break = world.getBlockState(pos2break);
-                if (state2break.is(Blocks.AIR) || !state2break.is(BlockTags.LOGS) ||
-                        !state2break.is(BlockTags.LEAVES))
+                if (state2break.is(Blocks.AIR))
                     break;
-                if (state2break.isToolEffective(ToolType.AXE)) {
+                if (state2break.isToolEffective(ToolType.AXE) && state2break.is(BlockTags.LOGS)) {
                     world.destroyBlock(pos2break, true, entity);
                     stack.hurtAndBreak(1, entity, p -> {
                         p.broadcastBreakEvent(EquipmentSlotType.MAINHAND);
@@ -53,5 +53,24 @@ public class LumberAxe extends AxeItem {
         if (state.getMaterial() == Material.LEAVES)
             return this.speed + 5;
         return super.getDestroySpeed(stack, state);
+    }
+
+    public static int getItemColor(ItemStack stack, int layer) {
+        if (layer == 0) {
+            return getMaterialColor(stack);
+        }
+        return 0xFFFFFF;
+    }
+
+    public static int getMaterialColor(ItemStack stack) {
+        //return stack.getOrCreateTag().getInt("materialColor");
+        return ModItemTier.getCol(((LumberAxe)stack.getItem()).tierName);
+    }
+
+    @Override
+    public void fillItemCategory(ItemGroup group, NonNullList<ItemStack> items) {
+        if(allowdedIn(group)){
+
+        }
     }
 }

@@ -23,6 +23,7 @@ public class Main
         Registration.register();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientSetup::registerItemColor);
         MinecraftForge.EVENT_BUS.register(this);
     }
 

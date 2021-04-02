@@ -1,6 +1,7 @@
 package com.bioast.gttools.datagen.providers.client;
 
 import com.bioast.gttools.core.Ref;
+import com.bioast.gttools.core.setup.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -19,11 +20,20 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
-        builder(itemGenerated, "gt_axe");
-        builder(itemGenerated, "gt_saw");
+//        builder(itemGenerated, "gt_axe");
+//        builder(itemGenerated, "gt_saw");
+//        builder(itemGenerated, "gt_hammer");
+
+        ModItems.Axes.forEach((t,i)->{
+            builder(itemGenerated,i.get().toString(),"gt_axe");
+        });
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
         return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
+    }
+
+    private ItemModelBuilder builder(ModelFile itemGenerated, String name, String toolName) {
+        return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + toolName);
     }
 }
