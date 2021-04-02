@@ -1,25 +1,24 @@
-
 modLoader="javafml"
 loaderVersion="[36,)"
-license="All rights reserved"
+license="GPL v3"
 [[mods]]
-modId="examplemod"
+modId="GTtools"
 version="${file.jarVersion}"
-displayName="Example Mod"
+displayName="GregigTools"
 logoFile="logo.png"
-credits="Thanks for"
+credits="Thanks to Greg"
 authors="BioAst"
 description='''
 '''
 
-[[dependencies.examplemod]]
+[[dependencies.GTtools]]
     modId="forge"
     mandatory=true
     versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.GTtools]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"
