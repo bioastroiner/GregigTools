@@ -1,6 +1,7 @@
 package com.bioast.gttools.common.item;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.AxeItem;
@@ -13,8 +14,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 
 public class LumberAxe extends AxeItem {
-    public LumberAxe(IItemTier p_i48530_1_, float p_i48530_2_, float p_i48530_3_, Properties p_i48530_4_) {
-        super(p_i48530_1_, p_i48530_2_, p_i48530_3_, p_i48530_4_);
+    public LumberAxe(IItemTier tier, float speed, float p_i48530_3_, Properties properties) {
+        super(tier, speed, p_i48530_3_, properties);
     }
 
     @Override
@@ -25,16 +26,20 @@ public class LumberAxe extends AxeItem {
     @Override
     public boolean mineBlock(ItemStack stack, World world, BlockState state, BlockPos blockPos, LivingEntity entity) {
         if (!world.isClientSide && state.getDestroySpeed(world, blockPos) != 0.0F) {
-            for (int i = 1; i < 20; i++) {
+            for (int i = 1; i < 30; i++) {
                 BlockPos pos2break = blockPos.above(i);
+                if(pos2break.getY() > world.getMaxBuildHeight())
+                    break;
                 BlockState state2break = world.getBlockState(pos2break);
+                if(state2break.is(Blocks.AIR))
+                    break;
                 if(state2break.isToolEffective(ToolType.AXE)){
                     world.destroyBlock(pos2break,true,entity);
+                    stack.hurtAndBreak(1, entity, p -> {
+                        p.broadcastBreakEvent(EquipmentSlotType.MAINHAND);
+                    });
                 }
             }
-            stack.hurtAndBreak(1, entity, p -> {
-                p.broadcastBreakEvent(EquipmentSlotType.MAINHAND);
-            });
         }
 
         return true;
