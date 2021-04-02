@@ -1,6 +1,6 @@
-package com.bioast.modid.datagen.providers.client;
+package com.bioast.gttools.datagen.providers.client;
 
-import com.bioast.modid.core.Ref;
+import com.bioast.gttools.core.Ref;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;

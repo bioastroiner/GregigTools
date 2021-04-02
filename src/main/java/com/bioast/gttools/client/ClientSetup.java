@@ -1,4 +1,4 @@
-package com.bioast.modid.client;
+package com.bioast.gttools.client;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 

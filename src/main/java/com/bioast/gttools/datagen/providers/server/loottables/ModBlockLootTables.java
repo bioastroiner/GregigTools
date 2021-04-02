@@ -1,4 +1,4 @@
-package com.bioast.modid.datagen.providers.server.loottables;
+package com.bioast.gttools.datagen.providers.server.loottables;
 
 import net.minecraft.block.Block;
 import net.minecraft.data.loot.BlockLootTables;

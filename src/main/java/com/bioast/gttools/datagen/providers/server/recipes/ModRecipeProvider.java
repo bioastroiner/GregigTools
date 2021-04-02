@@ -1,6 +1,6 @@
-package com.bioast.modid.datagen.providers.server.recipes;
+package com.bioast.gttools.datagen.providers.server.recipes;
 
-import com.bioast.modid.core.Ref;
+import com.bioast.gttools.core.Ref;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;

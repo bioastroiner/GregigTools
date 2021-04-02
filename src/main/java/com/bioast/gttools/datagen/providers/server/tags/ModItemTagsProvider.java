@@ -1,6 +1,6 @@
-package com.bioast.modid.datagen.providers.server.tags;
+package com.bioast.gttools.datagen.providers.server.tags;
 
-import com.bioast.modid.core.Ref;
+import com.bioast.gttools.core.Ref;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;

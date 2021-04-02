@@ -1,18 +1,18 @@
-package com.bioast.modid.datagen;
+package com.bioast.gttools.datagen;
 
-import com.bioast.modid.datagen.providers.client.ModBlockStateProvider;
-import com.bioast.modid.datagen.providers.client.ModItemModelProvider;
-import com.bioast.modid.datagen.providers.server.loottables.ModLootTableProvider;
-import com.bioast.modid.datagen.providers.server.recipes.ModRecipeProvider;
-import com.bioast.modid.datagen.providers.server.tags.ModBlockTagsProvider;
-import com.bioast.modid.datagen.providers.server.tags.ModItemTagsProvider;
+import com.bioast.gttools.datagen.providers.client.ModBlockStateProvider;
+import com.bioast.gttools.datagen.providers.client.ModItemModelProvider;
+import com.bioast.gttools.datagen.providers.server.loottables.ModLootTableProvider;
+import com.bioast.gttools.datagen.providers.server.recipes.ModRecipeProvider;
+import com.bioast.gttools.datagen.providers.server.tags.ModBlockTagsProvider;
+import com.bioast.gttools.datagen.providers.server.tags.ModItemTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 
-import static com.bioast.modid.core.ModName.MOD_ID;
+import static com.bioast.gttools.core.ModName.MOD_ID;
 
 
 @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)

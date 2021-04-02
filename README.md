@@ -2,6 +2,8 @@
 
 based on **Gregtech**
 
+this mod adds standalone GregStyle tools like saw,hammer,u-spade,more pickaxe,lumberaxe,... 
+
 **Status** : ***early** development*
 ### Feutures
 

@@ -1,4 +1,4 @@
-package com.bioast.modid.datagen.providers.server.loottables;
+package com.bioast.gttools.datagen.providers.server.loottables;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
