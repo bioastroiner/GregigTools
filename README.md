@@ -1,7 +1,5 @@
 # Gregig Tools
 
-A mod about worms , and more worms , and more...
-
 based on **Gregtech**
 
 **Status** : ***early** development*
