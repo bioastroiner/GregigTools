@@ -1,5 +1,6 @@
 package com.bioast.gttools.datagen.providers.server.loottables;
 
+import com.bioast.gttools.core.setup.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.data.loot.BlockLootTables;
 import net.minecraftforge.fml.RegistryObject;
@@ -9,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class ModBlockLootTables extends BlockLootTables {
 
-    DeferredRegister<Block> Blocks; //set to your own registery
+    DeferredRegister<Block> Blocks = Registration.BLOCKS; //set to your own registery
 
         @Override
         protected void addTables() {

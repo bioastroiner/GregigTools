@@ -23,5 +23,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         getOrCreateBuilder(ModTags.Items.INGOTS_SILVER).add(ModItems.SILVER_INGOT.get());
         getOrCreateBuilder(Tags.Items.INGOTS).addTag(ModTags.Items.INGOTS_SILVER);
         */
+        //copy(Tags.Blocks.ORES, Tags.Items.ORES);
     }
 }

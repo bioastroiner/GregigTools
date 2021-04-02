@@ -17,9 +17,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         //withExistingParent("silver_block", modLoc("block/silver_block"));
         //withExistingParent("silver_ore", modLoc("block/silver_ore"));
 
-        //ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
-        //builder(itemGenerated, "silver_ingot");
+        builder(itemGenerated, "gt_axe");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

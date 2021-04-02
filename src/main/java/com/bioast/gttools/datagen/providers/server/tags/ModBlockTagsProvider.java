@@ -12,7 +12,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
-        super.addTags();
+        return;
+        //getOrCreateRawBuilder(Tags.Blocks.CHESTS).addTag(Blocks.ACACIA_BUTTON,);
         /*
         getOrCreateBuilder(ModTags.Blocks.ORES_SILVER).add(ModBlocks.SILVER_ORE.get());
         getOrCreateBuilder(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_SILVER);
