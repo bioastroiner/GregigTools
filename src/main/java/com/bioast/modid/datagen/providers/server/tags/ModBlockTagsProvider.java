@@ -1,14 +1,13 @@
 package com.bioast.modid.datagen.providers.server.tags;
 
+import com.bioast.modid.core.Ref;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-import static com.bioast.modid.core.ModName.MOD_ID;
-
 public class ModBlockTagsProvider extends BlockTagsProvider {
     public ModBlockTagsProvider(DataGenerator generatorIn, ExistingFileHelper existingFileHelper) {
-        super(generatorIn, MOD_ID, existingFileHelper);
+        super(generatorIn, Ref.ID, existingFileHelper);
     }
 
     @Override

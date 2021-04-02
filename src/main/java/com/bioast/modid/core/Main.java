@@ -1,5 +1,6 @@
 package com.bioast.modid.core;
 
+import com.bioast.modid.client.ClientSetup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -17,7 +18,7 @@ public class Main
 	
 	public static final String MOD_ID = "GTtools";
 
-    public ModName() {
+    public Main() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
@@ -27,5 +28,6 @@ public class Main
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
+        new ClientSetup(event);
     }
 }

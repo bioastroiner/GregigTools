@@ -1,16 +1,15 @@
 package com.bioast.modid.datagen.providers.client;
 
+import com.bioast.modid.core.Ref;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-import static com.bioast.modid.core.ModName.MOD_ID;
-
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, MOD_ID, existingFileHelper);
+        super(generator, Ref.ID, existingFileHelper);
     }
 
     @Override

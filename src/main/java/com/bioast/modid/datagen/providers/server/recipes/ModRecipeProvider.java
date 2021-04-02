@@ -1,5 +1,6 @@
 package com.bioast.modid.datagen.providers.server.recipes;
 
+import com.bioast.modid.core.Ref;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;
@@ -7,15 +8,13 @@ import net.minecraft.util.ResourceLocation;
 
 import java.util.function.Consumer;
 
-import static com.bioast.modid.core.ModName.MOD_ID;
-
 public class ModRecipeProvider extends RecipeProvider {
     public ModRecipeProvider(DataGenerator generatorIn) {
         super(generatorIn);
     }
 
     private static ResourceLocation modId(String path) {
-        return new ResourceLocation(MOD_ID, path);
+        return new ResourceLocation(Ref.ID, path);
     }
 
     @Override
