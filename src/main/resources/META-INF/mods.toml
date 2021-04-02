@@ -2,7 +2,7 @@ modLoader="javafml"
 loaderVersion="[36,)"
 license="GPL v3"
 [[mods]]
-modId="GTtools"
+modId="gttools"
 version="${file.jarVersion}"
 displayName="GregigTools"
 logoFile="logo.png"
@@ -11,14 +11,14 @@ authors="BioAst"
 description='''
 '''
 
-[[dependencies.GTtools]]
+[[dependencies.gttools]]
     modId="forge"
     mandatory=true
     versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 # Here's another dependency
-[[dependencies.GTtools]]
+[[dependencies.gttools]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"

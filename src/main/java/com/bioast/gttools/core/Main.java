@@ -16,7 +16,7 @@ public class Main
 {
     public static final Logger LOGGER = LogManager.getLogger();
 	
-	public static final String MOD_ID = "GTtools";
+	public static final String MOD_ID = "gttools";
 
     public Main() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
