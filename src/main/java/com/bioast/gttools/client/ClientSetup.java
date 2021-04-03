@@ -10,6 +10,8 @@ public class ClientSetup {
 
     }
     public static void registerItemColor(ColorHandlerEvent.Item event) {
-        event.getItemColors().register(LumberAxe::getItemColor, ModItems.L_AXE.get());
+        ModItems.Axes.forEach((tier,item)->{
+            event.getItemColors().register(LumberAxe::getItemColor, item.get());
+        });
     }
 }

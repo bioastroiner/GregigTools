@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "gttools:item/stick",
-    "layer1": "gttools:item/gt_hammer"
+    "layer1": "gttools:item/gt_axe"
   }
 }

@@ -56,15 +56,10 @@ public class LumberAxe extends AxeItem {
     }
 
     public static int getItemColor(ItemStack stack, int layer) {
-        if (layer == 0) {
-            return getMaterialColor(stack);
+        if (layer == 1) {
+            return ModItemTier.getCol(((LumberAxe)stack.getItem()).tierName);
         }
         return 0xFFFFFF;
-    }
-
-    public static int getMaterialColor(ItemStack stack) {
-        //return stack.getOrCreateTag().getInt("materialColor");
-        return ModItemTier.getCol(((LumberAxe)stack.getItem()).tierName);
     }
 
     @Override

@@ -8,6 +8,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.tags.ITag;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.LazyValue;
+import net.minecraftforge.common.Tags;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -38,13 +39,14 @@ public class ModItemTier implements IItemTier {
 
     public static void registerItemTier(){
         ourTiers.put("wood",out(1,200,2,2,1, ItemTags.PLANKS, MaterialColor.WOOD.col));
+        ourTiers.put("stone",out(2,400,3,3,2, Tags.Items.COBBLESTONE, MaterialColor.STONE.col));
         ourTiers.put("flint",out(2,400,3,3,2,Items.FLINT, MaterialColor.COLOR_BLACK.col));
         ourTiers.put("iron",out(2, 250, 6.0F, 2.0F, 14,Items.IRON_INGOT, MaterialColor.METAL.col));
         ourTiers.put("gold",out(3,200,5,5,4,Items.GOLD_INGOT, MaterialColor.GOLD.col));
         ourTiers.put("diamond",out(3,1800,8,5,3,Items.DIAMOND, MaterialColor.DIAMOND.col));
         ourTiers.put("emerald",out(3,2000,8,5,3,Items.EMERALD, MaterialColor.EMERALD.col));
         ourTiers.put("quartz",out(3,1500,6,5,3,Items.QUARTZ, MaterialColor.QUARTZ.col));
-        ourTiers.put("netherite",out(3,2300,8,5,3,Items.NETHERITE_INGOT, MaterialColor.COLOR_BROWN.col));
+        ourTiers.put("netherite",out(3,2300,8,5,3,Items.NETHERITE_INGOT, MaterialColor.PODZOL.col));
         ourTiers.put("netherrack",out(3,300,9,5,3,Items.NETHERRACK, MaterialColor.NETHER.col));
     }
 

@@ -19,13 +19,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         //withExistingParent("silver_ore", modLoc("block/silver_ore"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile itemHandheld = getExistingFile(mcLoc("item/handheld"));
 
 //        builder(itemGenerated, "gt_axe");
-//        builder(itemGenerated, "gt_saw");
-//        builder(itemGenerated, "gt_hammer");
+        builder(itemHandheld, "gt_saw");
+        builder(itemHandheld, "gt_hammer","gt_hammer");
 
         ModItems.Axes.forEach((t,i)->{
-            builder(itemGenerated,i.get().toString(),"gt_axe");
+            builder(itemHandheld,i.get().toString(),"gt_axe");
         });
     }
 
@@ -34,6 +35,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name, String toolName) {
-        return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + toolName);
+        return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + "stick")
+                .texture("layer1","item/" + toolName);
     }
 }
