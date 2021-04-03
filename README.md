@@ -19,12 +19,12 @@ this mod adds standalone GregStyle tools like saw,hammer,u-spade,more pickaxe,lu
 ### stuffs
 
 - [ ] Pickaxe
-- [ ] lumber axe
+- [x] lumber axe
 - [ ] shovel
 - [ ] u-spade
 - [ ] syckle (routine break more leaves,grass etc)
-- [ ] saw (a faster block by block wood cutter)
-- [ ] hammer (crush ores,stone,gravel,sand,etc)
+- [x] saw (a faster block by block wood cutter)
+- [x] hammer (crush ores,stone,gravel,sand,etc)
 - [ ] electric tools..
 - [ ] modular crafting
 - [ ] crafting materials
