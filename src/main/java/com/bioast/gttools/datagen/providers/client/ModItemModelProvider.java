@@ -22,11 +22,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         ModelFile itemHandheld = getExistingFile(mcLoc("item/handheld"));
 
 //        builder(itemGenerated, "gt_axe");
-        builder(itemHandheld, "gt_saw");
-        builder(itemHandheld, "gt_hammer","gt_hammer");
+//        builder(itemHandheld, "gt_saw");
+//        builder(itemHandheld, "gt_hammer","gt_hammer");
 
         ModItems.Axes.forEach((t,i)->{
             builder(itemHandheld,i.get().toString(),"gt_axe");
+        });
+        ModItems.Hammers.forEach((t,i)->{
+            builder(itemHandheld,i.get().toString(),"gt_hammer");
+        });
+        ModItems.Saws.forEach((t,i)->{
+            builder(itemHandheld,i.get().toString(),"gt_saw");
         });
     }
 

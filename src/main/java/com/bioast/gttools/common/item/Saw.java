@@ -13,8 +13,11 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 
 public class Saw extends AxeItem {
-    public Saw(IItemTier p_i48530_1_, float p_i48530_2_, float p_i48530_3_, Properties p_i48530_4_) {
+    public String tierName;
+
+    public Saw(IItemTier p_i48530_1_, float p_i48530_2_, float p_i48530_3_, Properties p_i48530_4_, String tierName) {
         super(p_i48530_1_, p_i48530_2_, p_i48530_3_, p_i48530_4_);
+        this.tierName = tierName;
     }
 
     @Override
@@ -67,5 +70,11 @@ public class Saw extends AxeItem {
         if (super.getDestroySpeed(p_150893_1_, state) != 0)
             return super.getDestroySpeed(p_150893_1_, state) + 3f;
         return super.getDestroySpeed(p_150893_1_, state);
+    }
+    public static int getItemColor(ItemStack stack, int layer) {
+        if (layer == 1) {
+            return ModItemTier.getCol(((Saw)stack.getItem()).tierName);
+        }
+        return 0xFFFFFF;
     }
 }

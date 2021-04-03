@@ -13,8 +13,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class Hammer extends PickaxeItem {
-    public Hammer(IItemTier tier, int p_i48478_2_, float p_i48478_3_, Properties properties) {
+    public String tierName;
+
+    public Hammer(IItemTier tier, int p_i48478_2_, float p_i48478_3_, Properties properties,String tierName) {
         super(tier, p_i48478_2_, p_i48478_3_, properties);
+        this.tierName = tierName;
     }
 
     private static void spawnItem(World world, BlockPos pos, Item item) {
@@ -49,5 +52,12 @@ public class Hammer extends PickaxeItem {
                 && material != Material.STONE && material != Material.SAND && material != Material.GRASS
                 && material != Material.DIRT
                 ? super.getDestroySpeed(stack, state) : this.speed;
+    }
+
+    public static int getItemColor(ItemStack stack, int layer) {
+        if (layer == 1) {
+            return ModItemTier.getCol(((Hammer)stack.getItem()).tierName);
+        }
+        return 0xFFFFFF;
     }
 }
