@@ -15,6 +15,7 @@ this mod adds standalone GregStyle tools like saw,hammer,u-spade,more pickaxe,lu
 * NO
 
 ## TODOs
+naming convention : "_" for material type and "." for subcasing the names
 
 ### stuffs
 
