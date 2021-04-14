@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xpx",
+    " x ",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "tag": "minecraft:planks"
+    },
+    "p": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "gttools:components.drill_wood"
+  }
+}

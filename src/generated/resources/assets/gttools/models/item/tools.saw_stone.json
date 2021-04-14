@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gttools:item/handle_saw",
+    "layer1": "gttools:item/saw"
+  }
+}

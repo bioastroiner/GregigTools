@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xpx",
+    " x ",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:emerald"
+    },
+    "p": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "gttools:components.drill_emerald"
+  }
+}

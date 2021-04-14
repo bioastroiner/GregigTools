@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    "x  ",
+    "xx "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "gttools:components.hammer_emerald"
+  }
+}

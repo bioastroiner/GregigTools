@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:rods/wooden"
+    },
+    {
+      "item": "gttools:components.axe_netherrack"
+    }
+  ],
+  "result": {
+    "item": "gttools:tools.axe_netherrack"
+  }
+}

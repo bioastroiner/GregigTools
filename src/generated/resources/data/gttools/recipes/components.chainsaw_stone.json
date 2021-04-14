@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xpx",
+    "xrx"
+  ],
+  "key": {
+    "x": {
+      "tag": "forge:cobblestone"
+    },
+    "p": {
+      "item": "minecraft:diamond"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "gttools:components.chainsaw_stone"
+  }
+}

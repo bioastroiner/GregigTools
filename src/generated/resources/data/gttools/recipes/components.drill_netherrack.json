@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xpx",
+    " x ",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:netherrack"
+    },
+    "p": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "gttools:components.drill_netherrack"
+  }
+}

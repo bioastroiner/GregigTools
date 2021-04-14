@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "gttools:tools.hammer_gold",
+    "gttools:tools.hammer_quartz",
+    "gttools:tools.hammer_netherrack",
+    "gttools:tools.hammer_diamond",
+    "gttools:tools.hammer_flint",
+    "gttools:tools.hammer_iron",
+    "gttools:tools.hammer_netherite",
+    "gttools:tools.hammer_wood",
+    "gttools:tools.hammer_emerald",
+    "gttools:tools.hammer_stone"
+  ]
+}

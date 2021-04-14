@@ -1,6 +1,8 @@
 package com.bioast.gttools.datagen.providers.server.tags;
 
 import com.bioast.gttools.core.Ref;
+import com.bioast.gttools.core.setup.ModItems;
+import com.bioast.gttools.core.setup.ModTags;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;
@@ -14,6 +16,13 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
+        ModTags.Items.TOOL_TAGS.forEach((name,tag)->{
+            ModItems.Tools.forEach((id,map)->map.values().forEach(i->{
+                if(name.equals(ModItems.TOOL_MAP.get(id)))
+                tag(tag).add(i.get());
+            }));
+        });
+
         /*
         copy(ModTags.Blocks.ORES_SILVER, ModTags.Items.ORES_SILVER);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);

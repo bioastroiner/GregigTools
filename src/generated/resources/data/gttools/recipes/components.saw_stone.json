@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "x  ",
+    "x  "
+  ],
+  "key": {
+    "x": {
+      "tag": "forge:cobblestone"
+    }
+  },
+  "result": {
+    "item": "gttools:components.saw_stone"
+  }
+}

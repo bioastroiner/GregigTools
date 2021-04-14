@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "gttools:components.drill_emerald"
+    ]
+  },
+  "criteria": {
+    "has_Item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_wood"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "gttools:components.drill_emerald"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_Item",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    " x ",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "item": "gttools:components.axe_flint"
+  }
+}

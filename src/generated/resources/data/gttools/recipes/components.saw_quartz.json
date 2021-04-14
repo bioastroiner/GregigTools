@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "x  ",
+    "x  "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "gttools:components.saw_quartz"
+  }
+}

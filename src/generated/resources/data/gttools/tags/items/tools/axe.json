@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "gttools:tools.axe_gold",
+    "gttools:tools.axe_quartz",
+    "gttools:tools.axe_netherrack",
+    "gttools:tools.axe_diamond",
+    "gttools:tools.axe_flint",
+    "gttools:tools.axe_iron",
+    "gttools:tools.axe_netherite",
+    "gttools:tools.axe_wood",
+    "gttools:tools.axe_emerald",
+    "gttools:tools.axe_stone"
+  ]
+}

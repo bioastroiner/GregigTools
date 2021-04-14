@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:rods/wooden"
+    },
+    {
+      "item": "gttools:components.saw_diamond"
+    }
+  ],
+  "result": {
+    "item": "gttools:tools.saw_diamond"
+  }
+}
