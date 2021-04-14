@@ -3,6 +3,7 @@ package com.bioast.gttools.datagen;
 import com.bioast.gttools.core.Ref;
 import com.bioast.gttools.datagen.providers.client.ModBlockStateProvider;
 import com.bioast.gttools.datagen.providers.client.ModItemModelProvider;
+import com.bioast.gttools.datagen.providers.client.ModLanguageProvider;
 import com.bioast.gttools.datagen.providers.server.loottables.ModLootTableProvider;
 import com.bioast.gttools.datagen.providers.server.recipes.ModRecipeProvider;
 import com.bioast.gttools.datagen.providers.server.tags.ModBlockTagsProvider;
@@ -40,6 +41,8 @@ public final class DataGenerators {
             gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
             // ItemModel
             gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+            // Translation
+            gen.addProvider(new ModLanguageProvider(gen));
         }
     }
 }

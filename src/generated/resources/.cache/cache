@@ -1,3 +1,4 @@
+e88c565f53b31a09df466e3598e73eb9724a13b9 assets/gttools/lang/en_us.json
 47312b63586ec7740de6a8a831c2246ded6d57c1 assets/gttools/models/item/components.axe_diamond.json
 47312b63586ec7740de6a8a831c2246ded6d57c1 assets/gttools/models/item/components.axe_emerald.json
 47312b63586ec7740de6a8a831c2246ded6d57c1 assets/gttools/models/item/components.axe_flint.json
@@ -308,6 +309,6 @@ cb45de0acb868135549df45f49cb230b8d31ade9 data/gttools/recipes/tools.saw_netherra
 a1e2549103e6b8c3ecd5b2f65e499d4d6cf4e8d6 data/gttools/recipes/tools.saw_quartz.json
 cd5646e87528ebdbaec6b631b36d4ca469211f61 data/gttools/recipes/tools.saw_stone.json
 ae751dc33453d66c67558cd9d3a8882af660b578 data/gttools/recipes/tools.saw_wood.json
-ba400fae4e161cf3b8964c56f4b58b1eb19e0bd3 data/gttools/tags/items/tools/axe.json
-4b14b38db79f58a47dd55c66339f2e3a8cfb9dda data/gttools/tags/items/tools/hammer.json
-437903d00b39b3dee9d0d35587b32a3998a8cff7 data/gttools/tags/items/tools/saw.json
+2d7772d3a72b5244719d7b5c96dca304ac92daa0 data/gttools/tags/items/tools/axe.json
+e9779bf99da7be1081c4542546a754bd2d9d3f5d data/gttools/tags/items/tools/hammer.json
+08d4605c5596b389fc7cf814145e11813e2e7af9 data/gttools/tags/items/tools/saw.json

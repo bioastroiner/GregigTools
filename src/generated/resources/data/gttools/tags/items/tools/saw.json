@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "gttools:tools.saw_gold",
-    "gttools:tools.saw_quartz",
-    "gttools:tools.saw_netherrack",
     "gttools:tools.saw_diamond",
-    "gttools:tools.saw_flint",
-    "gttools:tools.saw_iron",
-    "gttools:tools.saw_netherite",
-    "gttools:tools.saw_wood",
     "gttools:tools.saw_emerald",
-    "gttools:tools.saw_stone"
+    "gttools:tools.saw_netherrack",
+    "gttools:tools.saw_wood",
+    "gttools:tools.saw_netherite",
+    "gttools:tools.saw_iron",
+    "gttools:tools.saw_stone",
+    "gttools:tools.saw_quartz",
+    "gttools:tools.saw_gold",
+    "gttools:tools.saw_flint"
   ]
 }
