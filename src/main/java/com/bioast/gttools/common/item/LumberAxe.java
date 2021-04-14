@@ -16,8 +16,8 @@ import net.minecraftforge.common.ToolType;
 public class LumberAxe extends AxeItem {
     public String tierName;
 
-    public LumberAxe(IItemTier tier, float speed, float p_i48530_3_, Properties properties, String tierName) {
-        super(tier, speed, p_i48530_3_, properties);
+    public LumberAxe(IItemTier tier, float attackDamage, float attackSpeed, Properties properties, String tierName) {
+        super(tier, attackDamage, attackSpeed, properties);
         this.tierName = tierName;
     }
 
