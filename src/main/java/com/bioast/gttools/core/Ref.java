@@ -12,7 +12,7 @@ public final class Ref {
     public static final String ID = Main.MOD_ID;
 
     public static String ver() {
-        return "0.0";
+        return "0.1a";
     }
 
     public static Logger out(){
